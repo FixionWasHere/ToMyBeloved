@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You my Beloved</title>
+    <link rel="stylesheet" href="./styles_page2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Haii gyangg,</strong>
+                        <p>
+                            It's not much and it's probably not perfect either, but I didn't want you to feel left out
+                            on Valentine's :3
+                        </p>
+                        <p>
+                            You know gyang… you highkey live rent free in my head.<br>
+                            Talking to you has genuinely become one of my favourite parts of my days.
+                        </p>
+                        <p>
+                            Not a single second spent chatting with you has ever felt boring to me.<br>
+                            You just make everything feel so fucking good somehow
+                        </p>
+                        <p>
+                            And honestly…<br>
+                            You don't even realise how much better life has felt since I realised how big of an Isha
+                            Paglu i am.<br>
+                            And bacchaw there's absolutely no pressure in anything I said here.<br>
+                            I just wanted to be honest about how I feel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sweetheart"></div>
+        </div>
+    </div>
+
+    <!-- Full-screen overlay: letter already centered, fades in when envelope opens -->
+    <div class="letter-overlay" id="letterOverlay" aria-hidden="true">
+        <div class="letter-overlay-paper">
+            <div class="text">
+                <strong>Haii gyangg,</strong>
+                <p>
+                    It's not much and it's probably not perfect either, but I didn't want you to feel left out on
+                    Valentine's :3
+                </p>
+                <p>
+                    You know gyang… you highkey live rent free in my head.<br>
+                    Talking to you has genuinely become one of my favourite parts of my days.
+                </p>
+                <p>
+                    Not a single second spent chatting with you has ever felt boring to me.<br>
+                    You just make everything feel so fucking good somehow
+                </p>
+                <p>
+                    And honestly…<br>
+                    You don't even realise how much better life has felt since I realised how big of an Isha Paglu i
+                    am.<br>
+                    And hey — there's absolutely no pressure in anything I said here ok?<br>
+                    I just wanted to be honest about how I feel and how much I WUVVVVVV YOU :3
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        const overlay = document.getElementById('letterOverlay');
+
+        envelope.addEventListener('click', () => {
+            envelope.classList.add('flap');
+            overlay.classList.add('show');
+        });
+
+        setTimeout(() => {
+            window.location.href = 'page3.html';
+        }, 15000);
+    </script>
+</body>
+
+</html>
